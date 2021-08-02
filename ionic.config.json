@@ -1,0 +1,7 @@
+{
+  "name": "DiceRoller",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
