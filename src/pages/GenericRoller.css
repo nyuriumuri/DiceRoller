@@ -1,0 +1,82 @@
+
+
+.RollToolBar {
+--ion-grid-width: 50%;
+  margin:auto;
+  margin-top: 1rem;
+  background-color:rgb(230, 230, 230) ;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  --ion-grid-padding: 0.5rem;
+}
+.RollInput {
+  --background: #f2a69c;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  --border-color: #000000;
+  --border-style:none ;
+  border-style:none ;
+ --inner-border-width: 2px;
+  --border-width: 0px;
+}
+
+#Explosive{
+	--background: rgb(230, 230, 230);
+	--background-checked: rgb(158, 222, 131);
+	--border-color-checked: inherit;
+	--border-radius: 2rem;
+}
+
+#RollButton{
+	--background: rgb(158, 222, 131);
+}
+
+.DiceWindow {
+  width:14rem;
+
+  margin:auto;
+  margin-top: 2rem;
+  border-radius: 4px;
+  padding:0;
+  background-color:  rgb(230, 230, 230);;
+  justify-content: center;
+  align-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  --border-style:none ;
+
+}
+
+
+.DiceIcon{
+
+	text-align: center;
+    display: flex;
+    height: 4rem;
+	width: 4rem;
+	 line-height: 4rem;
+	 justify-content: center;
+ align-items: center;
+	padding: 1rem;
+  background-color: rgb(59, 59, 59);
+  border-radius: 0.75rem;
+  font-size: large;
+  font-weight: bolder;
+  font-family: fantasy;
+
+}
+
+.Result{
+	margin:auto;
+	--background: #f2a69c;
+	text-align: center;
+	width: 10rem;
+	--min-height : 10rem;
+	--border-style:none;
+	--border-radius: 50%;
+	font-size: 4rem;
+}
