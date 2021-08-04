@@ -1,6 +1,6 @@
 {
-  "homepage": "http://nyuriumuri.github.io/GenericDiceRoller",
-  "name": "GenericDiceRoller",
+  "homepage": "http://nyuriumuri.github.io/DiceRoller",
+  "name": "DiceRoller",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
