@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.c363e6a3.chunk.js": "/DiceRoller/static/js/0.c363e6a3.chunk.js",
     "static/js/0.c363e6a3.chunk.js.map": "/DiceRoller/static/js/0.c363e6a3.chunk.js.map",
-    "main.css": "/DiceRoller/static/css/main.f9b8b27d.chunk.css",
+    "main.css": "/DiceRoller/static/css/main.3db51520.chunk.css",
     "main.js": "/DiceRoller/static/js/main.1f18ee29.chunk.js",
     "main.js.map": "/DiceRoller/static/js/main.1f18ee29.chunk.js.map",
     "polyfills-dom.js": "/DiceRoller/static/js/polyfills-dom.a8cd712d.chunk.js",
@@ -124,7 +124,7 @@
     "service-worker.js": "/DiceRoller/service-worker.js",
     "service-worker.js.map": "/DiceRoller/service-worker.js.map",
     "static/css/4.532f36fa.chunk.css.map": "/DiceRoller/static/css/4.532f36fa.chunk.css.map",
-    "static/css/main.f9b8b27d.chunk.css.map": "/DiceRoller/static/css/main.f9b8b27d.chunk.css.map",
+    "static/css/main.3db51520.chunk.css.map": "/DiceRoller/static/css/main.3db51520.chunk.css.map",
     "static/js/4.1868cc41.chunk.js.LICENSE.txt": "/DiceRoller/static/js/4.1868cc41.chunk.js.LICENSE.txt",
     "static/js/53.7407d28f.chunk.js.LICENSE.txt": "/DiceRoller/static/js/53.7407d28f.chunk.js.LICENSE.txt",
     "static/js/polyfills-dom.a8cd712d.chunk.js.LICENSE.txt": "/DiceRoller/static/js/polyfills-dom.a8cd712d.chunk.js.LICENSE.txt"
@@ -133,7 +133,7 @@
     "static/js/runtime-main.94b186ff.js",
     "static/css/4.532f36fa.chunk.css",
     "static/js/4.1868cc41.chunk.js",
-    "static/css/main.f9b8b27d.chunk.css",
+    "static/css/main.3db51520.chunk.css",
     "static/js/main.1f18ee29.chunk.js"
   ]
 }
