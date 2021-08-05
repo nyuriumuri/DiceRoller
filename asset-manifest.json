@@ -2,16 +2,16 @@
   "files": {
     "static/js/0.c363e6a3.chunk.js": "/DiceRoller/static/js/0.c363e6a3.chunk.js",
     "static/js/0.c363e6a3.chunk.js.map": "/DiceRoller/static/js/0.c363e6a3.chunk.js.map",
-    "main.css": "/DiceRoller/static/css/main.bb9af89d.chunk.css",
-    "main.js": "/DiceRoller/static/js/main.47b9f23e.chunk.js",
-    "main.js.map": "/DiceRoller/static/js/main.47b9f23e.chunk.js.map",
+    "main.css": "/DiceRoller/static/css/main.f9b8b27d.chunk.css",
+    "main.js": "/DiceRoller/static/js/main.1f18ee29.chunk.js",
+    "main.js.map": "/DiceRoller/static/js/main.1f18ee29.chunk.js.map",
     "polyfills-dom.js": "/DiceRoller/static/js/polyfills-dom.a8cd712d.chunk.js",
     "polyfills-dom.js.map": "/DiceRoller/static/js/polyfills-dom.a8cd712d.chunk.js.map",
     "runtime-main.js": "/DiceRoller/static/js/runtime-main.94b186ff.js",
     "runtime-main.js.map": "/DiceRoller/static/js/runtime-main.94b186ff.js.map",
     "static/css/4.532f36fa.chunk.css": "/DiceRoller/static/css/4.532f36fa.chunk.css",
-    "static/js/4.54a9ae01.chunk.js": "/DiceRoller/static/js/4.54a9ae01.chunk.js",
-    "static/js/4.54a9ae01.chunk.js.map": "/DiceRoller/static/js/4.54a9ae01.chunk.js.map",
+    "static/js/4.1868cc41.chunk.js": "/DiceRoller/static/js/4.1868cc41.chunk.js",
+    "static/js/4.1868cc41.chunk.js.map": "/DiceRoller/static/js/4.1868cc41.chunk.js.map",
     "static/js/5.c4fbcd27.chunk.js": "/DiceRoller/static/js/5.c4fbcd27.chunk.js",
     "static/js/5.c4fbcd27.chunk.js.map": "/DiceRoller/static/js/5.c4fbcd27.chunk.js.map",
     "static/js/6.641992df.chunk.js": "/DiceRoller/static/js/6.641992df.chunk.js",
@@ -124,16 +124,16 @@
     "service-worker.js": "/DiceRoller/service-worker.js",
     "service-worker.js.map": "/DiceRoller/service-worker.js.map",
     "static/css/4.532f36fa.chunk.css.map": "/DiceRoller/static/css/4.532f36fa.chunk.css.map",
-    "static/css/main.bb9af89d.chunk.css.map": "/DiceRoller/static/css/main.bb9af89d.chunk.css.map",
-    "static/js/4.54a9ae01.chunk.js.LICENSE.txt": "/DiceRoller/static/js/4.54a9ae01.chunk.js.LICENSE.txt",
+    "static/css/main.f9b8b27d.chunk.css.map": "/DiceRoller/static/css/main.f9b8b27d.chunk.css.map",
+    "static/js/4.1868cc41.chunk.js.LICENSE.txt": "/DiceRoller/static/js/4.1868cc41.chunk.js.LICENSE.txt",
     "static/js/53.7407d28f.chunk.js.LICENSE.txt": "/DiceRoller/static/js/53.7407d28f.chunk.js.LICENSE.txt",
     "static/js/polyfills-dom.a8cd712d.chunk.js.LICENSE.txt": "/DiceRoller/static/js/polyfills-dom.a8cd712d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.94b186ff.js",
     "static/css/4.532f36fa.chunk.css",
-    "static/js/4.54a9ae01.chunk.js",
-    "static/css/main.bb9af89d.chunk.css",
-    "static/js/main.47b9f23e.chunk.js"
+    "static/js/4.1868cc41.chunk.js",
+    "static/css/main.f9b8b27d.chunk.css",
+    "static/js/main.1f18ee29.chunk.js"
   ]
 }
