@@ -3,7 +3,7 @@ import { personCircle, search, helpCircle, star, create, ellipsisHorizontal, ell
 import ExploreContainer from '../components/ExploreContainer';
 import {rollDice} from '../functions/rollDice';
 import './GenericRoller.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const GenericRoller: React.FC = () => {
 	const [dice, setDice] = useState<number[]>([]);
