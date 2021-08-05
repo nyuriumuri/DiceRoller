@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonItem, IonInput, IonTitle, IonToolbar, IonButton, IonGrid, IonSelect, IonSelectOption, IonIcon, IonButtons,IonRow, IonCol, IonCheckbox, IonLabel } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonMenuButton, IonItem, IonInput,IonRouterOutlet, IonMenu, IonList, IonTitle, IonToolbar, IonButton, IonFooter,IonGrid, IonSelect, IonSelectOption, IonIcon, IonButtons,IonRow, IonCol, IonCheckbox, IonLabel } from '@ionic/react';
 import { personCircle, search, helpCircle, star, create, ellipsisHorizontal, ellipsisVertical } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import {rollDice} from '../functions/rollDice';
@@ -36,53 +36,10 @@ const GenericRoller: React.FC = () => {
 	};
   return (
     <IonPage>
+
+
       <IonContent fullscreen>
-			<IonGrid fixed={true} className="RollToolBar">
-				<IonRow>
-					<IonCol size="auto">
-					<IonItem className="RollInput">
-					    <IonInput type="number" value={num} placeholder="3" onIonChange={e => { if(parseInt(e.detail.value!, 10)>0) setNum(parseInt(e.detail.value!, 10))}}></IonInput>
-					 </IonItem>
-					 </IonCol>
-					<IonCol size="auto">
-					<IonItem className="RollInput">
-					  d <IonInput type="number" value={max} placeholder="3" onIonChange={e => { if(parseInt(e.detail.value!, 10)>0) setMax(parseInt(e.detail.value!, 10))}}></IonInput>
-					</IonItem></IonCol>
-					<IonCol size="auto">
-						<IonItem className="RollInput">
-							<IonLabel position="fixed"> Explosive </IonLabel>
-							<IonCheckbox id="Explosive" checked={explosive} onIonChange={e=> setExplosive(e.detail.checked)}></IonCheckbox>
-						</IonItem>
-					</IonCol>
-					<IonCol size="auto">
-						<IonItem className="RollInput">
-						<IonSelect value={mode} onIonChange={e => setMode(e.detail.value)}>
-						<IonSelectOption value="Sum">Sum</IonSelectOption>
-						<IonSelectOption value="Evens">Evens</IonSelectOption>
-						<IonSelectOption value="Successes">Successes</IonSelectOption>
-						 </IonSelect>
-						</IonItem>
-					</IonCol>
-					{mode=="Successes" && <IonCol>
-						<IonItem className="RollInput">
-						<IonSelect value={success_operator} onIonChange={e => setSuccOp(e.detail.value)}>
-						<IonSelectOption value='>'>{'>'}</IonSelectOption>
-						<IonSelectOption value='<'>{'<'}</IonSelectOption>
-						<IonSelectOption value='='>=</IonSelectOption>
-						 </IonSelect>
-						</IonItem>
-					</IonCol>
-				 	}
-					{mode=="Successes" && <IonCol>
-						<IonItem className="RollInput">
-					    	<IonInput type="number" value={success_val} placeholder="3" onIonChange={e => setSuccVal(parseInt(e.detail.value!, 10))}></IonInput>
-					 	</IonItem>
-					 </IonCol>}
-					<IonCol>
-					<IonButton id="RollButton" expand="block" onClick ={()=>{rollClickHandler()}}> Roll </IonButton>
-					</IonCol>
-				</IonRow>
-			</IonGrid>
+
 
 				<IonGrid className="DiceWindow">
 					<IonRow>
@@ -95,7 +52,61 @@ const GenericRoller: React.FC = () => {
 		{mode=="Sum" && <IonItem className="Result"><IonLabel>{sum} </IonLabel></IonItem>}
 		{mode=="Evens" && <IonItem className="Result"><IonLabel>{evens} </IonLabel></IonItem>}
 		{mode=="Successes" && <IonItem className="Result"><IonLabel>{successes} </IonLabel></IonItem>}
+
+
+
       </IonContent>
+	  <IonFooter className="ion-no-border">
+
+	  <IonGrid fixed={true} className="RollToolBar">
+		  <IonRow>
+			  <IonCol size-sm>
+			  <IonItem className="RollInput">
+				  <IonInput type="number" value={num} placeholder="3"  min="1" onIonChange={e => { if(parseInt(e.detail.value!, 10)>0) setNum(parseInt(e.detail.value!, 10))}}></IonInput>
+			   </IonItem>
+			   </IonCol>
+			  <IonCol size-sm>
+			  <IonItem className="RollInput">
+				d <IonInput type="number" value={max} placeholder="3" min="1" onIonChange={e => { if(parseInt(e.detail.value!, 10)>0) setMax(parseInt(e.detail.value!, 10))}}></IonInput>
+			  </IonItem></IonCol>
+			  <IonCol siz-md>
+				  <IonItem className="RollInput">
+					  <IonLabel position="fixed"> Explosive </IonLabel>
+					  <IonCheckbox id="Explosive" checked={explosive} onIonChange={e=> setExplosive(e.detail.checked)}></IonCheckbox>
+				  </IonItem>
+			  </IonCol>
+			  <IonCol size-md>
+				  <IonItem className="RollInput">
+				  <IonSelect value={mode} onIonChange={e => setMode(e.detail.value)}>
+				  <IonSelectOption value="Sum">Sum</IonSelectOption>
+				  <IonSelectOption value="Evens">Evens</IonSelectOption>
+				  <IonSelectOption value="Successes">Successes</IonSelectOption>
+				   </IonSelect>
+				  </IonItem>
+			  </IonCol>
+			  {mode=="Successes" && <IonCol size-sm>
+				  <IonItem className="RollInput">
+				  <IonSelect value={success_operator} onIonChange={e => setSuccOp(e.detail.value)}>
+				  <IonSelectOption value='>'>{'>'}</IonSelectOption>
+				  <IonSelectOption value='<'>{'<'}</IonSelectOption>
+				  <IonSelectOption value='='>=</IonSelectOption>
+				   </IonSelect>
+				  </IonItem>
+			  </IonCol>
+			  }
+			  {mode=="Successes" && <IonCol size-sm>
+				  <IonItem className="RollInput">
+					  <IonInput type="number" value={success_val} placeholder="3" onIonChange={e => setSuccVal(parseInt(e.detail.value!, 10))}></IonInput>
+				  </IonItem>
+			   </IonCol>}
+			  <IonCol>
+			  <IonButton id="RollButton" expand="block" onClick ={()=>{rollClickHandler()}}> Roll </IonButton>
+			  </IonCol>
+		  </IonRow>
+	  </IonGrid>
+
+	  </IonFooter>
+
     </IonPage>
   );
 };
